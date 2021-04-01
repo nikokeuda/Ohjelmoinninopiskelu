@@ -1,0 +1,90 @@
+<html>
+<head>
+  <style>
+  .vieri {
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 10px;
+    float:left;
+  }
+    #kaksi{
+      background-color: green;
+    }
+
+  </style>
+</head>
+<body>
+<script>
+function etsiSuurin() {
+  //var luku1, luku2, luku3, luku4, luku5
+  var l1, l2, l3, l4, l5, suurin;
+  l1 = parseInt(document.getElementById('luku1').value);
+  l2 = parseInt(document.getElementById('luku2').value);
+  l3 = parseInt(document.getElementById('luku3').value);
+  l4 = parseInt(document.getElementById('luku4').value);
+  l5 = parseInt(document.getElementById('luku5').value);
+if(l1 < l2 && l3 < l2 && l4 < l2 && l5 < l2)
+{
+  suurin = l2;
+}
+else if(l1 < l3 && l4 < l3 && l5 < l3)
+{
+  suurin = l3;
+}
+else if(l1 < l4 && l5 < l4)
+{
+  suurin = l4;
+}
+else if(l1 < l5)
+{
+  suurin = l5;
+}
+else {
+  suurin = l1;
+}
+  document.write("Annoit luvut: " +l1 + ' ' + l2 + ' ' + l3 + ' ' + l4 + ' ' + l5);
+  document.write("<br>Suurin niistä on: " + suurin);
+}
+  /*if(luku1 > luku2 && luku1 > luku3 && luku1 > luku4 && luku1 > luku5)
+  {
+    document.write("Lukusi on : " + luku1);
+  }
+  if(luku2 > luku1 && luku2 > luku3 && luku2 > luku4 && luku2 > luku5)
+  {
+    document.write("Lukusi on :" + luku2);
+  }
+  if(luku3 > luku1 && luku3 > luku2 && luku3 > luku4 && luku3 > luku5)
+  {
+    document.write("Lukusi on :" +luku3);
+  }
+  if(luku4 > luku1 && luku4 > luku2 && luku4 > luku3 && luku4 > luku5)
+  {
+    document.write("Lukusi on :" + luku4);
+  }
+  if(luku5> luku1 && luku5> luku2 && luku5> luku3 && luku5 > luku4)
+  {
+    document.write("Lukusi on :" + luku5)
+  }
+} tein tän eka ilman sitä mallii ilmeisesti vähä turhaa ja huonommin */
+
+
+
+
+</script>
+
+<article  class='vieri' id='kaksi'>
+   <h1>Tehtävä 2</h1>
+   <p>Ohjelma joka ottaa vastaan 5 lukua ja etsii niistä suurimman</p>
+   <form class="" action="index.html" method="post">
+     <p>Anna 1. luku: <input type="text" id="luku1" value=""></p>
+     <p>Anna 2. luku: <input type="text" id="luku2" value=""></p>
+     <p>Anna 3. luku: <input type="text" id="luku3" value=""></p>
+     <p>Anna 4. luku: <input type="text" id="luku4" value=""></p>
+     <p>Anna 5. luku: <input type="text" id="luku5" value=""></p>
+     <button type="button" name="button" onclick="etsiSuurin()">Etsi suurin numero</button>
+   </form>
+ </article>
+
+</body>
+</html>
