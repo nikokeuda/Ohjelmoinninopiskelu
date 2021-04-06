@@ -1,0 +1,50 @@
+<html>
+<head>
+<style>
+.vieri {
+  width: 500px;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 10px;
+  float:left;
+}
+  #viisi{
+    background-color: violet;
+  }
+
+</style>
+</head>
+
+<body>
+<script>
+function kaanna()
+{
+  var lang = document.getElementById('kieli').value;
+  if(lang == 'eng')
+  {
+    document.write("Hello world!");
+  } else if(lang == 'swe')
+  {
+    document.write("Hej världen!")
+  }
+  else {
+    document.write("Hola mundo!");
+  }
+}
+
+</script>
+
+<article  class='vieri' id='viisi'>
+   <h1>Tehtävä 5</h1>
+     <p>Ohjelma joka kääntää "Hei maailma" - tekstin valitulle kielelle (englanti, ruotsi, espanja)</p>
+   <p>Valitse kieli</p>
+   <select class="" id="kieli">
+     <option value="eng">Englanti</option>
+     <option value="swe">Ruotsi</option>
+     <option value="esp">Espanja</option>
+   </select>
+   <button type="button" id="button" onclick="kaanna()">Käännä</button>
+ </article>
+
+<body>
+</html>
