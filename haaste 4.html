@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+.vieri {
+  width: 500px;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 10px;
+  float:left;
+}
+  #nelja{
+    background-color: cyan;
+  }
+
+</style>
+</head>
+
+<body>
+<script>
+
+function ajoneuvo() {
+  var age = parseInt(document.getElementById('ika').value);
+  if (age < 16)
+  {
+    document.write("Voit ajaa polkypyörää");
+  }
+  else if(age < 18)
+  {
+    document.write("Voit ajaa mopoa");
+  }
+  else {
+    document.write("Voit ajaa autoa");
+  }
+}
+</script>
+
+<article  class='vieri' id='nelja'>
+    <h1>Tehtävä 4</h1>
+    <p>Ohjelma joka kysyy käyttäjän ikää ja tarkistaa, mitä ajoneuvoa saa ajaa: <16v - polkupyörää, <18v - mopoa, muutoin autoa</p>
+      <form class="" action="index.html" method="post">
+        <p>Anna käyttäjän ikä: <input type="text" id="ika" value=""></p>
+        <button type="button" name="button" onclick="ajoneuvo()">Näytä ajoneuvo</button>
+      </form>
+    </article>
+
+
+
+
+
+
+</body>
+</html>
